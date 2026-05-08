@@ -16,8 +16,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "OnboardFlowKit",
-            url: "https://github.com/AperoVN/SupermindOnboardSwift-Distribution/releases/download/1.0.0/OnboardFlowSDK-1.0.0.zip",
-            checksum: "11121a5d23b25897a2d219814ac45cf37be6c3e1fb399208657b63de15bf6033"
+            url: "https://github.com/AperoVN/SupermindOnboardSwift-Distribution/releases/download/1.1.1/OnboardFlowSDK-1.1.1.zip",
+            checksum: "9d3e024090041e5c26a0f4dd90e308fc8fd0613086b413f2770dfd059a1c14fe"
         )
     ]
 )
