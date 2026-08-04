@@ -18,14 +18,16 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(url: "https://github.com/RevenueCat/purchases-ios-spm", exact: "5.72.0"),
+        // RevenueCat pinned as `from:` so consumer apps can bump minor/patch without SPM conflict.
+        // Binary compiled against $REVENUECAT_VERSION; RevenueCat 5.x maintains ABI within major.
+        .package(url: "https://github.com/RevenueCat/purchases-ios-spm", from: "5.72.0"),
         .package(url: "https://github.com/AperoVN/SupermindCMSSwift-Distribution", exact: "1.0.2")
     ],
     targets: [
         .binaryTarget(
             name: "OnboardFlowKitBinary",
-            url: "https://github.com/AperoVN/SupermindOnboardSwift-Distribution/releases/download/1.4.8/OnboardFlowSDK-1.4.8.zip",
-            checksum: "32462e5268013e665550986f0cdcf09f3db17154804713a8abf17d5c813cd341"
+            url: "https://github.com/AperoVN/SupermindOnboardSwift-Distribution/releases/download/1.4.9/OnboardFlowSDK-1.4.9.zip",
+            checksum: "f4f27f5bcc6434bc3b317e0fc4de2be45399512858381a17b2a9a35bbf1b9f13"
         ),
         .target(
             name: "OnboardFlowKitTarget",
